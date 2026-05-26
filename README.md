@@ -10,7 +10,7 @@ across days 2, 4, and 6.
 | Method | Type | Description |
 |--------|------|-------------|
 | **Palantir** | Single-snapshot | Graph-based pseudotime on the day-2 snapshot alone. Computes diffusion maps and branch probabilities via a Markov chain. |
-| **MultistageOT** | Multi-snapshot | Optimal transport across consecutive time points. Learns a transport plan matching the day-2 distribution to days 4/6. |
+| **MultistageOT** | Single-snapshot | Optimal transport across consecutive time points. Learns a transport plan matching the day-2 distribution to days 4/6. |
 | **PRESCIENT** | Multi-snapshot | Neural SDE trained on all time points. Simulates cell trajectories forward in time from the day-2 starting population. |
 
 Single-snapshot methods receive only the day-2 cells as input.
